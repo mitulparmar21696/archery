@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Archery Technobrains</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/fontawesome-4.6.3.min.css"> <!-- custom styles -->
+	<link rel="stylesheet" href="css/framework.css"> <!-- custom styles -->
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/NerdCtrl.js"></script>
+	<script src="js/services/NerdService.js"></script>
+	<script src="js/controllers/GeekCtrl.js"></script>
+	<script src="js/services/GeekService.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="NerdController">
+<div>
+		<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> 
+			<!-- ################################################################################################ -->
+			<div class="wrapper row1">
+			  <header id="header" class="hoc clear"> 
+				<!-- ################################################################################################ -->
+				<div id="logo" class="fl_left">
+				  <h1><a href="index.html">Preevent</a></h1>
+				</div>
+				<!-- ################################################################################################ -->
+				<nav id="mainav" class="fl_right">
+				  <ul class="clear">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a class="drop" href="#">Pages</a>
+					  <ul>
+						<li><a href="pages/gallery.html">Gallery</a></li>
+						<li><a href="pages/full-width.html">Full Width</a></li>
+						<li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+						<li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+						<li><a href="pages/basic-grid.html">Basic Grid</a></li>
+					  </ul>
+					</li>
+					<li><a class="drop" href="#">Dropdown</a>
+					  <ul>
+						<li><a href="#">Level 2</a></li>
+						<li><a class="drop" href="#">Level 2 + Drop</a>
+						  <ul>
+							<li><a href="#">Level 3</a></li>
+							<li><a href="#">Level 3</a></li>
+							<li><a href="#">Level 3</a></li>
+						  </ul>
+						</li>
+						<li><a href="#">Level 2</a></li>
+					  </ul>
+					</li>
+					<li><a href="#">Link Text</a></li>
+					<li><a href="#">Link Text</a></li>
+				  </ul>
+				</nav>
+				<!-- ################################################################################################ -->
+			  </header>
+			</div>
+			<!-- ################################################################################################ -->
+			<!-- ################################################################################################ -->
+			<!-- ################################################################################################ -->
+			<article id="pageintro" class="hoc clear"> 
+			  <!-- ################################################################################################ -->
+			  <h2 class="heading">Dapibus non condimentum</h2>
+			  <div class="txtwrap">
+				<p>We Make your dream comes true</p>
+				<footer>
+				  <ul class="nospace inline pushright">
+					<li><a class="btn" href="#">Posuere</a></li>
+					<li><a class="btn inverse" href="#">Porttitor</a></li>
+				  </ul>
+				</footer>
+			  </div>
+			  <!-- ################################################################################################ -->
+			</article>
+			<!-- ################################################################################################ -->
+		  </div>
+		  <!-- End Top Background Image Wrapper -->
+
+
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<div ng-view></div>
+	<script src="css/jquery.min.js"></script>
+	<script src="css/jquery.backtotop.js"></script>
+	<script src="css/jquery.mobilemenu.js"></script>
+</div>
+</body>
+</html>
